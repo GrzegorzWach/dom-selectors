@@ -60,3 +60,35 @@ window.setWantedBgColor = (type, background) => {
  }
  
   
+
+
+
+
+ // dzien 10
+
+ window.addSufixToHeaders = () => {
+  const h1 = document.querySelector('.row h1');
+  const h2 = document.querySelector('.row h2');
+  const h3 = document.querySelector('.row h3');
+  const h4 = document.querySelector('.row h4');
+
+  h1.innerText = h1.innerText + ' SMTH';
+  h2.innerText = h2.innerText + ' SMTH';
+  h3.innerText = h3.innerText + ' SMTH';
+  h4.innerText = h4.innerText + ' SMTH';
+ }
+
+
+ window.cloneHeared = () => {
+  // document.querySelector() - znaleźć body
+   // document.querySelector() - znaleźć h1
+   //h1.cloneNode(true)
+   //body.insertBefore(newh1, h1)
+
+   const body = document.querySelector('body');
+   const h1 = document.querySelector('h1');
+
+   body.insertBefore(h1.cloneNode(true), h1);
+   body.insertBefore(h1.cloneNode(true), h1);
+   body.insertBefore(h1.cloneNode(true), h1);
+ }
